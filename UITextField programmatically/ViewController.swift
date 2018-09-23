@@ -12,7 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let txtUserName = UITextView(frame: CGRect(x: 10.0, y: 100.0, width: UIScreen.main.bounds.size.width, height: 50.0))
+        
+        txtUserName.backgroundColor = .yellow
+        txtUserName.keyboardAppearance = .alert
+        self.view.addSubview(txtUserName)
+        
+
     }
 
 
